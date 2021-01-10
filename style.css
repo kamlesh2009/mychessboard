@@ -1,0 +1,19 @@
+.chessboard{
+    align-items: center;
+    width: 450px; height:450px;
+     border-style:solid; 
+    font-size:20px; line-height:2.5; 
+    }
+   
+   .chessboard>div{height:11.11%;}
+   
+   .chessboard>div>div{
+    width:11.11%; height:100%;
+    display:inline-block; vertical-align:top;}
+   
+   .chessboard>div:nth-child(odd)>div:nth-child(even),
+   .chessboard>div:nth-child(even)>div:nth-child(odd)
+    {background-color:black; color:white;}
+   
+   .chessboard>div:nth-child(1),.chessboard>div>div:nth-child(1)
+    {background-color:black; color:white; }
